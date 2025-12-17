@@ -36,7 +36,6 @@ export class CalculatorComponent implements OnInit {
 
         this.result = firstInput + secondInput;
         break;
-
       }
       case '-': {
 
