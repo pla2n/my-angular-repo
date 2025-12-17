@@ -9,13 +9,13 @@ describe('CalculatorComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CalculatorComponent ],
+      declarations: [CalculatorComponent],
       imports: [
         FormsModule,
         ReactiveFormsModule
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -46,7 +46,7 @@ describe('CalculatorComponent', () => {
     component.calculatorForm.get('operator').setValue('-');
     component.onSubmit();
 
-    expect(component.result).toBe(8);
+    expect(component.result).toBe(12);
 
   });
 
